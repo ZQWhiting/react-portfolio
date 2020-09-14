@@ -2,7 +2,26 @@ import React from 'react';
 import './style.css';
 
 function Resume() {
-	return null;
+	const proficiencies = [
+		{ name: 'MongoDB' },
+		{ name: 'Express.js' },
+		{ name: 'React.js' },
+		{ name: 'Node.js' },
+	];
+	return (
+		<section>
+			{/* link to resume */}
+			<h2>Resume:</h2>
+			<a href='#Resume'>Resume</a>
+			{/* a list of developer's proficiencies */}
+			<h2>Proficiencies:</h2>
+			<ul>
+				{proficiencies.map(({ name }) => (
+					<li key={name}>{name}</li>
+				))}
+			</ul>
+		</section>
+	);
 }
 
 export default Resume;

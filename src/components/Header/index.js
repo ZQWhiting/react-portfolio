@@ -10,8 +10,8 @@ function Header(props) {
 		{ name: 'Resume' },
 	];
 	return (
-		<>
-			<div>Zachary Q. Whiting</div>
+		<section>
+			<h1>Zachary Q. Whiting</h1>
 			<nav>
 				<ul>
 					{navLinks.map(({ name }) => {
@@ -36,7 +36,7 @@ function Header(props) {
 					})}
 				</ul>
 			</nav>
-		</>
+		</section>
 	);
 }
 
