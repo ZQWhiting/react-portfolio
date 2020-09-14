@@ -4,7 +4,7 @@ import './index.css';
 function Header(props) {
 	const { selectedSection, setSelectedSection } = props;
 	const navLinks = [
-		{ name: 'About' },
+		{ name: 'About Me' },
 		{ name: 'Portfolio' },
 		{ name: 'Contact' },
 		{ name: 'Resume' },
@@ -14,20 +14,21 @@ function Header(props) {
 			Zachary Q. Whiting
 			<nav>
 				<ul>
-					{navLinks.map((link) => {
+					{navLinks.map(({ name }) => {
+						name = name.split(' ');
 						return (
-							<li>
+							<li key={name[0]}>
 								<a
-									href={`#${link.name}`}
+									href={`#${name[0]}`}
 									className={
-										selectedSection === link.name &&
-										'isActive'
+										selectedSection === name[0] ?
+										'isActive' : undefined
 									}
 									onClick={() =>
-										setSelectedSection(`${link.name}`)
+										setSelectedSection(`${name[0]}`)
 									}
 								>
-									<span>{link.name}</span>
+									<span>{name.join(' ')}</span>
 								</a>
 							</li>
 						);
