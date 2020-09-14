@@ -5,7 +5,9 @@ function Project({ title, image, deployed, repo }) {
 	return (
 		<div>
 			<div>{title}</div>
-			<div>{image}</div>
+			<div className='img-wrapper'>
+				<img src={image} alt={title} />
+			</div>
 			<div>
 				<a href={deployed} target='_blank' rel='noopener noreferrer'>
 					{deployed}
