@@ -5,6 +5,7 @@ import './style.css';
 function About() {
 	return (
 		<section>
+			<h2>About me</h2>
 			<div className='photo'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>

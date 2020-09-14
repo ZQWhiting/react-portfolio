@@ -29,6 +29,7 @@ function Portfolio() {
 	];
 	return (
 		<section>
+			<h2>Portfolio</h2>
 			{/* For Each project, render a Project component with a title, and image, and links to the deployed app and the repository*/}
 			{projects.map(({ title, image, deployed, repo }) => (
 				<Project

@@ -4,9 +4,9 @@ import './style.css';
 function Navigation(props) {
 	const { selectedSection, setSelectedSection } = props;
 	const navLinks = [
-		{ name: 'About Me' },
+		{ name: 'About me' },
 		{ name: 'Portfolio' },
-		{ name: 'Contact' },
+		{ name: 'Contact me' },
 		{ name: 'Resume' },
 	];
 	return (

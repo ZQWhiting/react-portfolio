@@ -11,10 +11,10 @@ function Resume() {
 	return (
 		<section>
 			{/* link to resume */}
-			<h2>Resume:</h2>
+			<h2>Resume</h2>
 			<a href='#Resume'>Resume</a>
 			{/* a list of developer's proficiencies */}
-			<h2>Proficiencies:</h2>
+			<h3>Proficiencies:</h3>
 			<ul>
 				{proficiencies.map(({ name }) => (
 					<li key={name}>{name}</li>
