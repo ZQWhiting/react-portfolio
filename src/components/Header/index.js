@@ -11,7 +11,7 @@ function Header(props) {
 	];
 	return (
 		<header>
-			Zachary Q. Whiting
+			<div>Zachary Q. Whiting</div>
 			<nav>
 				<ul>
 					{navLinks.map(({ name }) => {
@@ -21,8 +21,9 @@ function Header(props) {
 								<a
 									href={`#${name[0]}`}
 									className={
-										selectedSection === name[0] ?
-										'isActive' : undefined
+										selectedSection === name[0]
+											? 'isActive'
+											: undefined
 									}
 									onClick={() =>
 										setSelectedSection(`${name[0]}`)
