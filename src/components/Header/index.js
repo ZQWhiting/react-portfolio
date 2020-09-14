@@ -10,7 +10,7 @@ function Header(props) {
 		{ name: 'Resume' },
 	];
 	return (
-		<header>
+		<>
 			<div>Zachary Q. Whiting</div>
 			<nav>
 				<ul>
@@ -36,7 +36,7 @@ function Header(props) {
 					})}
 				</ul>
 			</nav>
-		</header>
+		</>
 	);
 }
 
