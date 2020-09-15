@@ -1,11 +1,27 @@
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .isActive {
-    font-size: large;
+	font-size: large;
 }
+
+.logo-container {
+	flex: 0 32%;
+}
+
+.logo-container img {
+	width: 100%;
+}
+
+.nav-bar {
+	flex: 1 100%;
+}
+
+/* .nav-menu {} */
+/* .nav-menu-btn {} */
+/* .nav-menu-content {} */

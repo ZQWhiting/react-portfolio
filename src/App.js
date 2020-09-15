@@ -11,7 +11,7 @@ function App() {
 	const [selectedSection, setSelectedSection] = useState('About');
 	return (
 		<>
-			<header>
+			<header className='header'>
 				<Header
 					selectedSection={selectedSection}
 					setSelectedSection={setSelectedSection}
