@@ -11,12 +11,10 @@ function App() {
 	const [selectedSection, setSelectedSection] = useState('About');
 	return (
 		<>
-			<header className='header'>
 				<Header
 					selectedSection={selectedSection}
 					setSelectedSection={setSelectedSection}
 				/>
-			</header>
 			<main>
 				{selectedSection === 'About' && <About />}
 				{selectedSection === 'Portfolio' && <Portfolio />}

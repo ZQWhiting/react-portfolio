@@ -10,18 +10,18 @@ function Navigation(props) {
 		{ name: 'Resume' },
 	];
 	return (
-		<nav>
-			<ul>
+		<nav className='nav-menu'>
+			<ul className='nav-menu-content'>
 				{navLinks.map(({ name }) => {
 					name = name.split(' ');
 					return (
-						<li key={name[0]}>
+						<li className='nav-link' key={name[0]}>
 							<a
 								href={`#${name[0]}`}
 								className={
 									selectedSection === name[0]
 										? 'isActive'
-										: undefined
+										: ''
 								}
 								onClick={() => setSelectedSection(`${name[0]}`)}
 							>
