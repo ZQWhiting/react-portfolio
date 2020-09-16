@@ -21,9 +21,7 @@ function App() {
 				{selectedSection === 'Contact' && <Contact />}
 				{selectedSection === 'Resume' && <Resume />}
 			</main>
-			<footer>
 				<Footer />
-			</footer>
 		</>
 	);
 }

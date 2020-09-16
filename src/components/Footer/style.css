@@ -1,0 +1,7 @@
+footer {
+    height: 7.5vh;
+    background: var(--color-dark);
+    position: sticky;
+    bottom: 0;
+    flex-shrink: 0;
+}

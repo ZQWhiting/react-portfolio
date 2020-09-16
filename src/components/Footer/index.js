@@ -3,7 +3,7 @@ import './style.css';
 
 function Footer() {
 	return (
-		<section>
+		<footer>
 			<a href='https://github.com/ZQWhiting' target='_blank' rel="noopener noreferrer">
 				GitHub
 			</a>
@@ -17,7 +17,7 @@ function Footer() {
 			>
 				FaceBook
 			</a>
-		</section>
+		</footer>
 	);
 }
 
