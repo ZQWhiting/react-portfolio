@@ -1,7 +1,41 @@
 .img-wrapper {
-    width: 200px;
+    position: relative;
+    height: 100%;
 }
 
 .img-wrapper img {
     width: 100%;
+    position: aboslute;
+    height: 100%;
+}
+
+.img-wrapper:hover {
+    transform: scale(0.95, 0.95);
+    transition: linear 0.1s;
+}
+
+.project-link-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    padding-left: 8%;
+    font-size: 6vh;
+    display: flex;
+    opacity: 0;
+    background-color: var(--color-light);
+}
+
+.project-link-container:hover {
+    opacity: 0.6;
+    /* transition: linear; */
+}
+
+.project-link-container a:first-of-type {
+    margin-right: 8%;
+}
+
+.project-link-container a {
+    color: var(--color-highlight)
 }

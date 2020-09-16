@@ -1,0 +1,14 @@
+#project-grid {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    gap: 2vh;
+    grid-template-rows: repeat(6, 30vh)
+}
+
+@media only screen and (min-width: 600px){
+	#project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 30vh)
+    }
+}
