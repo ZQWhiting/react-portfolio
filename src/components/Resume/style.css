@@ -1,0 +1,12 @@
+#resume li {
+    list-style: circle;
+}
+
+#resume div {
+    margin: 1.8vh 0;
+}
+
+#resume a {
+    color: var(--color-highlight);
+    text-shadow: 1px 1px var(--color-dark);
+}
