@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
 import './style.css'
 
 function ContactForm() {
@@ -17,13 +17,15 @@ function ContactForm() {
 			const isValid = validateEmail(e.target.value);
 
 			if (!isValid) {
-				setErrorMessage('Your email is invalid.');
+				setErrorMessage('Invalid email');
 			} else {
 				setErrorMessage('');
 			}
 		} else {
 			if (!e.target.value.length) {
-				setErrorMessage(`${e.target.name} is required.`);
+				setErrorMessage(
+					`${capitalizeFirstLetter(e.target.name)} is required.`
+				);
 			} else {
 				setErrorMessage('');
 			}
