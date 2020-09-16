@@ -16,8 +16,8 @@ function About() {
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
 			<div className='bio'>
-				{bioText.split(/(?:\r\n)/g).map((paragraph) => (
-					<p>{paragraph}</p>
+				{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
+					<p key={'paragraph' + i}>{paragraph}</p>
 				))}
 			</div>
 		</section>
