@@ -29,7 +29,7 @@
 
 .project-link-container:hover {
     opacity: 0.6;
-    /* transition: linear; */
+    transition: linear 0.4s;
 }
 
 .project-link-container a:first-of-type {

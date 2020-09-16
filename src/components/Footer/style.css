@@ -1,7 +1,16 @@
 footer {
     height: 7.5vh;
     background: var(--color-dark);
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--color-light);
+    margin: auto 2vw;
+    font-size: 5vh;
 }
