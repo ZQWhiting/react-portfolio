@@ -1,12 +1,29 @@
+#resume {
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#resume h2, #resume a {
+    flex: 1 100%;
+}
+
 #resume li {
     list-style: circle;
 }
 
 #resume div {
-    margin: 1.8vh 0;
+    margin: 1.8vh 2vw;
 }
 
 #resume a {
-    color: var(--color-highlight);
-    text-shadow: 1px 1px var(--color-dark);
+    color: var(--color-brown);
+    text-shadow: 0.5px 0.5px var(--color-green);
+}
+
+@media only screen and (min-width: 600px) {
+	#resume div {
+		flex: 1 40%;
+	}
 }

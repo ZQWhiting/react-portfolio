@@ -1,7 +1,7 @@
 .header {
 	display: flex;
 	flex-wrap: wrap;
-	background: var(--color-dark);
+	background: var(--color-green);
 	font-size: calc(10px + 2vmin);
 	position: -webkit-sticky;
 	position: sticky;
@@ -61,5 +61,5 @@
 }
 
 .isActive {
-	color: var(--color-highlight);
+	color: var(--color-brown);
 }

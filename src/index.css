@@ -1,9 +1,9 @@
 :root {
-	--color-dark: #2e282a;
-	--color-highlight: #17bebb;
-	--color-light: #ffffff;
-	--color-primary: #12664f;
-	--color-secondary: #7a82ab;
+	--color-blue: #8EA3A1;
+	--color-brown: #7D6449;
+	--color-light: #F5EBDF;
+	--color-green: #A7B38A;
+	--color-grey: #A79D93;
 }
 
 * {
@@ -23,9 +23,9 @@ body {
 		'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  color: var(--color-light);
   display: flex;
   flex-direction: column;
+  color: #353535
 }
 
 h1,
