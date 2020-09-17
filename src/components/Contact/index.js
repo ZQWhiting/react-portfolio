@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
-import './style.css'
+import './style.css';
 
 function ContactForm() {
 	const [formState, setFormState] = useState({
@@ -73,14 +73,22 @@ function ContactForm() {
 						onBlur={handleChange}
 					/>
 				</div>
-				{errorMessage && (
-					<div>
-						<p className='error-text'>{errorMessage}</p>
-					</div>
-				)}
-				<button type='submit' data-testid='contact-submit'>
-					Submit
-				</button>
+				<div>
+					{errorMessage ? (
+						<div>
+							<p className='error-text'>{errorMessage}</p>
+						</div>
+					) : (
+						
+						
+						<div   />
+					
+					
+					)}
+					<button type='submit' data-testid='contact-submit'>
+						Submit
+					</button>
+				</div>
 			</form>
 		</section>
 	);
