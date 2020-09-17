@@ -11,13 +11,15 @@ function About() {
 
 	return (
 		<section>
-			<h2>About me</h2>
+			<h1>About me</h1>
 			<div className='photo'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
-				{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
-					<p key={'paragraph' + i} className='bio-text'>{paragraph}</p>
-				))}
+			{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
+				<p key={'paragraph' + i} className='bio-text'>
+					{paragraph}
+				</p>
+			))}
 		</section>
 	);
 }

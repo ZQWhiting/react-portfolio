@@ -29,18 +29,18 @@ function Portfolio() {
 	];
 	return (
 		<section>
-			<h2>Portfolio</h2>
+			<h1>Portfolio</h1>
 			{/* For Each project, render a Project component with a title, and image, and links to the deployed app and the repository*/}
 			<div id='project-grid'>
-					{projects.map(({ title, image, deployed, repo }) => (
-						<Project
-							title={title}
-							image={image}
-							deployed={deployed}
-							repo={repo}
-							key={title}
-						/>
-					))}
+				{projects.map(({ title, image, deployed, repo }) => (
+					<Project
+						title={title}
+						image={image}
+						deployed={deployed}
+						repo={repo}
+						key={title}
+					/>
+				))}
 			</div>
 		</section>
 	);

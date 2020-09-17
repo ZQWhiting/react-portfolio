@@ -5,8 +5,14 @@
     justify-content: space-between;
 }
 
-#resume h2, #resume a {
+#resume h1, #resume a {
     flex: 1 100%;
+    text-align: center;
+}
+
+#resume a {
+    color: var(--color-brown);
+    text-shadow: 0.5px 0.5px var(--color-green);
 }
 
 #resume li {
@@ -17,10 +23,6 @@
     margin: 1.8vh 2vw;
 }
 
-#resume a {
-    color: var(--color-brown);
-    text-shadow: 0.5px 0.5px var(--color-green);
-}
 
 @media only screen and (min-width: 600px) {
 	#resume div {

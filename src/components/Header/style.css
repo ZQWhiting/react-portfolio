@@ -13,30 +13,27 @@
 	z-index: 1;
 }
 
-.header div {
-	flex: 1;
-}
-
 .logo-container {
-	display: flex;
-	height:100%;
-	order: -1;
+	position: absolute;
 }
 
 .logo-container img {
-	height: 90%;
+	width: 90%;
 	margin: 1vh 0;
-	height: min(30vw, 180px);
+	width: 22vw;
+	min-width: 128px;
+	max-width: 180px;
 	background-color: var(--color-green);
-	border-bottom-right-radius: 44%;
-	padding-right: 8px;
-	border-bottom-left-radius: 44%;
+	border-bottom-left-radius: 51%;
+	border-bottom-right-radius: 47%;
+	margin-left: -10px;
 }
 
 .nav-btn-container {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
+	flex: 1;
 }
 
 .nav-menu-btn {

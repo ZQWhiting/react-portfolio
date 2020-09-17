@@ -15,7 +15,6 @@ function Header(props) {
 				className='header'
 				onClick={() => setMenuSelected(!menuSelected)}
 			>
-				<div></div>
 				<div className='logo-container'>
 					<img
 						src={logo}

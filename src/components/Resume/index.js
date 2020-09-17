@@ -12,11 +12,11 @@ function Resume() {
 	return (
 		<section id='resume'>
 			{/* link to resume */}
-			<h2>Resume</h2>
+			<h1>Resume</h1>
 			<a href='#Resume'>Download my resume</a>
 			{/* a list of developer's proficiencies */}
 			<div>
-				<h3>Front-end Proficiencies:</h3>
+				<h2>Front-end Proficiencies:</h2>
 				<ul>
 					{frontEndProficiencies.map(({ name }) => (
 						<li key={name}>{name}</li>
@@ -24,7 +24,7 @@ function Resume() {
 				</ul>
 			</div>
 			<div>
-				<h3>Back-end Proficiencies:</h3>
+				<h2>Back-end Proficiencies:</h2>
 				<ul>
 					{backEndProficiencies.map(({ name }) => (
 						<li key={name}>{name}</li>
