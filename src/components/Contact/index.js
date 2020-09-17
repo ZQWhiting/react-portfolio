@@ -24,7 +24,7 @@ function ContactForm() {
 		} else {
 			if (!e.target.value.length) {
 				setErrorMessage(
-					`${capitalizeFirstLetter(e.target.name)} is required.`
+					`${capitalizeFirstLetter(e.target.name)} is required`
 				);
 			} else {
 				setErrorMessage('');
@@ -79,11 +79,11 @@ function ContactForm() {
 							<p className='error-text'>{errorMessage}</p>
 						</div>
 					) : (
-						
-						
+
+
 						<div   />
-					
-					
+
+
 					)}
 					<button type='submit' data-testid='contact-submit'>
 						Submit

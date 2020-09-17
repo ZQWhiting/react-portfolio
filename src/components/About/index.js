@@ -15,11 +15,9 @@ function About() {
 			<div className='photo'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
-			<div className='bio'>
 				{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
-					<p key={'paragraph' + i}>{paragraph}</p>
+					<p key={'paragraph' + i} className='bio-text'>{paragraph}</p>
 				))}
-			</div>
 		</section>
 	);
 }

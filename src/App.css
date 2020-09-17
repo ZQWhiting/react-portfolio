@@ -16,6 +16,7 @@ main {
 
 main section h2 {
   margin-bottom: 1.8vh;
+  text-align: center;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
