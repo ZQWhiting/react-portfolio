@@ -3,12 +3,19 @@ import photo from '../../assets/images/me.jpg';
 import './style.css';
 
 function About() {
-	const bioText = ``;
+	const bioText = `fdsfdsafasf
+	dfadsfasd
+	safads
+	fdas
+	fds
+	af
+	asf
+	dasfasfsdafdsafdsa`;
 
 	return (
 		<section>
 			<h1>About me</h1>
-			<div className='photo'>
+			<div className='photo frame'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
 			{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
