@@ -3,13 +3,12 @@ import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
 import './style.css';
 
 function ContactForm() {
+	const [errorMessage, setErrorMessage] = useState('');
 	const [formState, setFormState] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
-	const [errorMessage, setErrorMessage] = useState('');
-
 	const { name, email, message } = formState;
 
 	function handleChange(e) {

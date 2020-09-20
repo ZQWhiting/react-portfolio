@@ -1,32 +1,21 @@
 import React from 'react';
+import resume from '../../assets/content/resume.pdf';
+import proficiencies from '../../assets/content/proficiencies';
 import './style.css';
 
 function Resume() {
-	const frontEndProficiencies = [
-		{ name: 'MongoDB' },
-		{ name: 'Express.js' },
-		{ name: 'React.js' },
-		{ name: 'Node.js' },
-	];
-	const backEndProficiencies = [{ name: 'Apis' }];
 	return (
 		<section id='resume'>
 			{/* link to resume */}
 			<h1>Resume</h1>
-			<a href='#Resume'>Download my resume</a>
+			<a href={resume} download rel='noopener noreferrer' target='_blank'>
+				Download my resume
+			</a>
 			{/* a list of developer's proficiencies */}
 			<div>
-				<h2>Front-end Proficiencies:</h2>
-				<ul>
-					{frontEndProficiencies.map(({ name }) => (
-						<li key={name}>{name}</li>
-					))}
-				</ul>
-			</div>
-			<div>
-				<h2>Back-end Proficiencies:</h2>
-				<ul>
-					{backEndProficiencies.map(({ name }) => (
+				<h2>Proficiencies:</h2>
+				<ul id='proficiencies'>
+					{proficiencies.map(({ name }) => (
 						<li key={name}>{name}</li>
 					))}
 				</ul>

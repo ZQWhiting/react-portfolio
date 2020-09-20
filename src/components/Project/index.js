@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import './style.css';
 
 function Project({ title, image, deployed, repo }) {
 	return (

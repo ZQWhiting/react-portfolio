@@ -15,12 +15,20 @@
     text-shadow: 0.5px 0.5px var(--color-green);
 }
 
-#resume li {
-    list-style: circle;
-}
-
 #resume div {
     margin: 1.8vh 2vw;
+}
+
+#proficiencies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#proficiencies li {
+    margin: 3px 5px;
+    padding: 2px 5px;
+    background: var(--color-light-green);
+    box-shadow: 2px 2px var(--color-green);
 }
 
 

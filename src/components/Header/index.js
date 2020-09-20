@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Navigation from '../Navigation';
-import './style.css';
-import logo from '../../assets/images/Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Navigation from '../Navigation';
+import logo from '../../assets/images/Logo.png';
+import './style.css';
 
 function Header(props) {
 	const { selectedSection, setSelectedSection } = props;

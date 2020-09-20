@@ -1,17 +1,9 @@
 import React from 'react';
 import photo from '../../assets/images/me.jpg';
+import bioText from '../../assets/content/bio_text';
 import './style.css';
 
 function About() {
-	const bioText = `fdsfdsafasf
-	dfadsfasd
-	safads
-	fdas
-	fds
-	af
-	asf
-	dasfasfsdafdsafdsa`;
-
 	return (
 		<section>
 			<h1>About me</h1>
