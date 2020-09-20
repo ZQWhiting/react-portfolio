@@ -7,7 +7,7 @@ import img6 from '../images/tech_blog.jpg';
 
 const projects = [
 	{
-		title: 'Media4U',
+		title: 'Media 4U',
 		image: img1,
 		deployed: 'https://zqwhiting.github.io/media4u/',
 		repo: 'http://github.com/zqwhiting/media4u',
