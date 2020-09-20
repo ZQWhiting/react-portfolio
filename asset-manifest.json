@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.058934e3.chunk.css",
+    "main.js": "/static/js/main.1381cf46.chunk.js",
+    "main.js.map": "/static/js/main.1381cf46.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.9492f0f4.chunk.js": "/static/js/2.9492f0f4.chunk.js",
+    "static/js/2.9492f0f4.chunk.js.map": "/static/js/2.9492f0f4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dd64d55571e401f795271978e82ad2ec.js": "/precache-manifest.dd64d55571e401f795271978e82ad2ec.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.058934e3.chunk.css.map": "/static/css/main.058934e3.chunk.css.map",
+    "static/js/2.9492f0f4.chunk.js.LICENSE.txt": "/static/js/2.9492f0f4.chunk.js.LICENSE.txt",
+    "static/media/budget_tracker.jpg": "/static/media/budget_tracker.e8a2ebc8.jpg",
+    "static/media/food_festival.jpg": "/static/media/food_festival.e4ec1b8a.jpg",
+    "static/media/logo.png": "/static/media/logo.e75f39c8.png",
+    "static/media/me.jpg": "/static/media/me.67de38d7.jpg",
+    "static/media/media4u.jpg": "/static/media/media4u.bfed8cb6.jpg",
+    "static/media/photo_port.jpg": "/static/media/photo_port.6863c27f.jpg",
+    "static/media/resume.pdf": "/static/media/resume.8b6c1362.pdf",
+    "static/media/tech_blog.jpg": "/static/media/tech_blog.7b6f9491.jpg",
+    "static/media/weather_dashboard.jpg": "/static/media/weather_dashboard.1c3ffb3f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.9492f0f4.chunk.js",
+    "static/css/main.058934e3.chunk.css",
+    "static/js/main.1381cf46.chunk.js"
+  ]
+}
