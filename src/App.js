@@ -11,17 +11,17 @@ function App() {
 	const [selectedSection, setSelectedSection] = useState('About');
 	return (
 		<>
-				<Header
-					selectedSection={selectedSection}
-					setSelectedSection={setSelectedSection}
-				/>
+			<Header
+				selectedSection={selectedSection}
+				setSelectedSection={setSelectedSection}
+			/>
 			<main>
 				{selectedSection === 'About' && <About />}
 				{selectedSection === 'Portfolio' && <Portfolio />}
-				{selectedSection === 'Contact' && <Contact />}
+				{/* {selectedSection === 'Contact' && <Contact />} */}
 				{selectedSection === 'Resume' && <Resume />}
 			</main>
-				<Footer />
+			<Footer />
 		</>
 	);
 }

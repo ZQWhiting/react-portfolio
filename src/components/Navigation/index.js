@@ -6,7 +6,7 @@ function Navigation(props) {
 	const navLinks = [
 		{ name: 'About me' },
 		{ name: 'Portfolio' },
-		{ name: 'Contact me' },
+		// { name: 'Contact me' },
 		{ name: 'Resume' },
 	];
 	return (
