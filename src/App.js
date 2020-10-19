@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
