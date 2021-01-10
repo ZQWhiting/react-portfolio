@@ -11,21 +11,26 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
 	const [selectedSection, setSelectedSection] = useState('About');
+
 	return (
 		<>
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Header
 					selectedSection={selectedSection}
 					setSelectedSection={setSelectedSection}
 				/>
 				<main>
-							<Switch>
-								<Route exact path={['/', '/about']} component={About} />
-								<Route exact path='/portfolio' component={Portfolio} />
-								<Route exact path='/contact' component={Contact} />
-								<Route exact path='/resume' component={Resume} />
-								<Route component={NotFound} />
-							</Switch>
+					<Switch>
+						<Route exact path={['/', '/about']} component={About} />
+						<Route
+							exact
+							path={'/portfolio'}
+							component={Portfolio}
+						/>
+						<Route exact path={'/contact'} component={Contact} />
+						<Route exact path={'/resume'} component={Resume} />
+						<Route component={NotFound} />
+					</Switch>
 				</main>
 				<Footer />
 			</Router>
