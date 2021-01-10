@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function Navigation(props) {
@@ -6,7 +7,7 @@ function Navigation(props) {
 	const navLinks = [
 		{ name: 'About me' },
 		{ name: 'Portfolio' },
-		// { name: 'Contact me' },
+		{ name: 'Contact me' },
 		{ name: 'Resume' },
 	];
 	return (
@@ -15,15 +16,15 @@ function Navigation(props) {
 				name = name.split(' ');
 				return (
 					<li className='nav-link' key={name[0]}>
-						<a
-							href={`#${name[0]}`}
+						<Link
+							to={`${name[0]}`.toLowerCase()}
 							className={
 								selectedSection === name[0] ? 'isActive' : ''
 							}
 							onClick={() => setSelectedSection(`${name[0]}`)}
 						>
 							<span>{name.join(' ')}</span>
-						</a>
+						</Link>
 					</li>
 				);
 			})}
