@@ -7,8 +7,15 @@ import img6 from '../images/tech_blog.jpg';
 import img7 from '../images/book_forum.jpg';
 import img8 from '../images/deep_thoughts.jpg';
 import img9 from '../images/shop_shop.jpg';
+import img10 from '../images/wedding.jpg';
 
 const projects = [
+	{
+		title: 'My Wedding',
+		image: img10,
+		deployed: 'https://whiting-galura-wedding.herokuapp.com/',
+		repo: 'https://github.com/ZQWhiting/whiting-galura-wedding',
+	},
 	{
 		title: 'Book Forum',
 		image: img7,
