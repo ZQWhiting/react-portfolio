@@ -1,9 +1,18 @@
 :root {
 	--color-light-green: #ddddcc;
-	--color-brown: #7D6449;
-	--color-light: #F5EBDF;
-	--color-green: #A7B38A;
-	--color-grey: #A79D93;
+	--color-brown: #7d6449;
+	--color-light: #f5ebdf;
+	--color-green: #a7b38a;
+	--color-grey: #a79d93;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: Lustria;
+	src: url(./assets/fonts/Lustria/Lustria-Regular.ttf);
 }
 
 * {
@@ -11,21 +20,19 @@
 }
 
 #root {
- min-height: 100vh;
- display: flex;
- flex-direction: column;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
+	font-family: Lato;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  color: #353535;
+	display: flex;
+	flex-direction: column;
+	color: #353535;
 }
 
 h1,
@@ -35,6 +42,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
+	font-family: Lustria;
 }
 
 h2 {

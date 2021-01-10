@@ -22,13 +22,16 @@
 #proficiencies {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 #proficiencies li {
+    flex: 1 0 auto;
     margin: 3px 5px;
     padding: 2px 5px;
     background: var(--color-light-green);
     box-shadow: 2px 2px var(--color-green);
+    text-align: center;
 }
 
 

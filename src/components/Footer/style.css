@@ -9,8 +9,12 @@ footer {
     justify-content: center;
 }
 
-footer a {
+footer>a {
     color: var(--color-light);
     margin: auto 2vw;
     font-size: 5vh;
+}
+
+footer>a:hover {
+    color: var(--color-brown)
 }
