@@ -1,92 +1,66 @@
-import React, { useState } from 'react';
-import { capitalizeFirstLetter, validateEmail } from '../../utils/helpers';
+import React from 'react';
 import './style.css';
 
-function ContactForm() {
-	const [errorMessage, setErrorMessage] = useState('');
-	const [formState, setFormState] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
-	const { name, email, message } = formState;
-
-	function handleChange(e) {
-		if (e.target.name === 'email') {
-			const isValid = validateEmail(e.target.value);
-
-			if (!isValid) {
-				setErrorMessage('Invalid email');
-			} else {
-				setErrorMessage('');
-			}
-		} else {
-			if (!e.target.value.length) {
-				setErrorMessage(
-					`${capitalizeFirstLetter(e.target.name)} is required`
-				);
-			} else {
-				setErrorMessage('');
-			}
-		}
-
-		if (!errorMessage) {
-			setFormState({ ...formState, [e.target.name]: e.target.value });
-		}
-	}
-
-	function handleSubmit(e) {
-		e.preventDefault();
-		console.log(formState);
-		// send to backend
-	}
-
+function Contact() {
 	return (
-		<section>
-			<h1 data-testid='contact-h1'>Contact me</h1>
-			<form id='contact-form' onSubmit={handleSubmit}>
-				<div>
-					<label htmlFor='name'>Name:</label>
-					<input
-						type='text'
-						name='name'
-						defaultValue={name}
-						onBlur={handleChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor='email'>Email address:</label>
-					<input
-						type='email'
-						name='email'
-						defaultValue={email}
-						onBlur={handleChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor='message'>Message:</label>
-					<textarea
-						name='message'
-						rows='5'
-						defaultValue={message}
-						onBlur={handleChange}
-					/>
-				</div>
-				<div>
-					{errorMessage ? (
-						<div>
-							<p className='error-text'>{errorMessage}</p>
-						</div>
-					) : (
-						<div />
-					)}
-					<button type='submit' data-testid='contact-submit'>
-						Submit
-					</button>
-				</div>
-			</form>
-		</section>
+		<>
+			<h1>My Contacts</h1>
+			<address>
+				<table>
+					<tr>
+						<td>Phone:</td>
+						<td>
+							<a href='tel:3852376420'>(385) 237-6420</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>
+							<a href='mailto:zach.whiting@icloud.com'>
+								zach.whiting@icloud.com
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Github:</td>
+						<td>
+							<a
+								href='https://github.com/ZQWhiting'
+								target='_blank'
+								rel="noopener noreferrer"
+							>
+								https://github.com/ZQWhiting
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>LinkedIn:</td>
+						<td>
+							<a
+								href='https://www.linkedin.com/in/zqwhiting'
+								target='_blank'
+								rel="noopener noreferrer"
+							>
+								https://www.linkedin.com/in/zqwhiting
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Facebook:</td>
+						<td>
+							<a
+								href='https://www.facebook.com/zachary.whiting.796'
+								target='_blank'
+								rel="noopener noreferrer"
+							>
+								https://www.facebook.com/zachary.whiting.796
+							</a>
+						</td>
+					</tr>
+				</table>
+			</address>
+		</>
 	);
 }
 
-export default ContactForm;
+export default Contact;
