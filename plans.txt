@@ -1,0 +1,37 @@
+As an employer looking to hire a programmer,
+I want a portfolio website that shows me
+
+* Who the candidate is (A bio or about page)
+* What motivates them
+* A photo
+* An explanation of your process
+* A call to action
+
+* Examples of their projects
+
+* A way to contact them
+* Relevant Social Media Accounts
+
+* A custom logo and tagline
+* A creative site design
+
+* Relevant skills
+* Specialties
+* Relevant education, coursework, and certificates
+* Any previous jobs that have some transferable experience
+* Relevant groups/communities you’ve held a leadership role in
+
+* Open source contributions
+* Quantifiable acheivements
+
+* Downloadable resume
+
+* Testimonials
+* Awards/Recognitions
+* A blog ??
+
+
+
+
+
+So that I can feel like the candidate is a good choice to hire
