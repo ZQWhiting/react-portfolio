@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Navigation from '../Navigation';
+import classNames from 'classnames';
 import logo from '../../assets/images/logo.png';
 import './style.css';
 
@@ -11,10 +12,10 @@ function Header(props) {
 
 	return (
 		<>
-			<header
-				className='header'
-				onClick={() => setMenuSelected(!menuSelected)}
-			>
+			<header className={classNames(
+				'header',
+				menuSelected && 'grow'
+			)}>
 				<div className='logo-container'>
 					<img
 						src={logo}
@@ -26,6 +27,7 @@ function Header(props) {
 						className={`nav-menu-btn ${
 							menuSelected ? 'isActive' : ''
 						}`}
+						onClick={() => setMenuSelected(!menuSelected)}
 					>
 						<FontAwesomeIcon icon={faBars} alt='navigation menu' />
 					</button>

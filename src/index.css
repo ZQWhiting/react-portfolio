@@ -1,9 +1,9 @@
 :root {
-	--color-light-green: #ddddcc;
-	--color-brown: #7d6449;
-	--color-light: #f5ebdf;
-	--color-green: #a7b38a;
-	--color-grey: #a79d93;
+	--color-dark: #687864;
+	--color-primary: #31708E;
+	--color-secondary: #5085A5;
+	--color-tetriary: #8FC1E3;
+	--color-light: #F7F9FB;
 }
 
 @font-face {

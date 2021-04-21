@@ -6,9 +6,9 @@ function Navigation(props) {
 	const { selectedSection, setSelectedSection } = props;
 	const navLinks = [
 		{ name: 'About me' },
-		{ name: 'Portfolio' },
-		{ name: 'Contact me' },
 		{ name: 'Resume' },
+		{ name: 'Portfolio' },
+		{ name: 'Contacts' },
 	];
 	return (
 		<ul className='nav-menu'>

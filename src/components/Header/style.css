@@ -1,20 +1,21 @@
 .header {
+	flex: 1 0 15vh;
 	display: flex;
 	flex-wrap: wrap;
-	background: var(--color-green);
+	background: var(--color-primary);
 	font-size: calc(10px + 2vmin);
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	color: var(--color-light);
+	color: var(--color-secondary);
 	justify-content: space-between;
-	flex-wrap: wrap;
-	height: 15vh;
 	z-index: 2;
+	width: 100%;
 }
 
 .logo-container {
 	position: absolute;
+	flex: 0 0 22vw;
 	z-index: 2;
 }
 
@@ -22,29 +23,29 @@
 	width: 90%;
 	margin: 1vh 0;
 	width: 22vw;
-	min-width: 128px;
+	min-width: 100px;
 	max-width: 180px;
-	background-color: var(--color-green);
+	background-color: var(--color-primary);
 	border-bottom-left-radius: 51%;
 	border-bottom-right-radius: 47%;
 	margin-left: -10px;
 }
 
 .nav-btn-container {
+	flex: 1 0 88vw;
+	height: 15vh;
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	flex: 1;
 }
 
 .nav-menu-btn {
+	margin-left: auto;
+	margin-top: auto;
 	background: transparent;
 	box-shadow: 0px 0px 0px transparent;
 	border: 0px solid transparent;
 	text-shadow: 0px 0px 0px transparent;
-	color: var(--color-light);
+	color: var(--color-tetriary);
 	font-size: 5vh;
-
 }
 
 .nav-menu-btn:hover {
@@ -52,6 +53,11 @@
 	box-shadow: 0px 0px 0px transparent;
 	border: 0px solid transparent;
 	text-shadow: 0px 0px 0px transparent;
+	color: var(--color-light);
+}
+
+.isActive:hover {
+	color: var(--color-tetriary);
 }
 
 .nav-menu-btn:active {
@@ -64,5 +70,28 @@
 }
 
 .isActive {
-	color: var(--color-brown);
+	color: var(--color-light);
+}
+
+.grow {
+	animation: grow 1s;
+}
+
+@keyframes grow {
+	0% {
+		height: 15vh
+	}
+
+	100% {
+		height: 100vh;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.header {
+		flex: 1 0 10vh;
+	}
+	.nav-menu-btn {
+		font-size: 10vh;
+	}
 }

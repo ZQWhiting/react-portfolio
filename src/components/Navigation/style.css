@@ -1,25 +1,60 @@
 .nav-menu {
-    background: var(--color-green);
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    margin-top: 0;
-    padding: 0 4.4vw 5px;
-    transform: translateY(14vh);
-    justify-content: space-evenly;
-    text-align: right;
+	background: var(--color-primary);
+	flex: 0 0 88vw;
+	z-index: 1;
+	margin-top: 0;
+	padding: 4vh 2.2vw;
+	animation: dropDown 1s both;
+	justify-content: space-between;
+	border-radius: 10% / 50%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+    max-width: calc(100vw - 150px);
 }
 
 .nav-link {
-    white-space: nowrap;
-    margin: 0 20px;
-    font-size: 200%;
+	white-space: nowrap;
+	margin: 10px 20px;
+	font-size: 200%;
+    flex: 1 0 20%;
+    text-align: center;
 }
 
-.nav-link>a {
-    text-decoration: underline;
+.nav-link > a {
+	text-decoration: none;
+	border-bottom: 3px solid var(--color-tetriary);
 }
 
-.nav-link>a:hover {
-    color: var(--color-brown);
+.nav-link > a:hover {
+	color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+a.isActive{
+    border-color: var(--color-light);
+}
+
+@keyframes dropDown {
+	0% {
+		transform: translateY(-30vh);
+		opacity: 0;
+		background-color: var(--color-tetriary);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		background-color: var(--color-primary);
+	}
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        margin-right: auto;
+    }
+    .nav-link {
+        flex: 1 0 80%;
+        margin: 0;
+    }
+
 }

@@ -4,11 +4,11 @@ li {
 
 header a {
   text-decoration: none;
-  color: var(--color-light);
+  color: var(--color-tetriary);
 }
 
 main {
-  background: var(--color-light);
+  background: var(--color-tetriary);
   margin: 0;
   flex-grow: 1;
   padding: 2vh 10vw;
