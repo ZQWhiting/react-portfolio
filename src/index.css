@@ -1,9 +1,10 @@
 :root {
-	--color-dark: #687864;
+	--color-dark: #91a098;
 	--color-primary: #31708E;
 	--color-secondary: #5085A5;
 	--color-tetriary: #8FC1E3;
 	--color-light: #F7F9FB;
+	--color-light-rgb: 247,249,251;
 }
 
 @font-face {
@@ -25,9 +26,14 @@
 	flex-direction: column;
 }
 
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
 body {
 	margin: 0;
-	font-family: Lato;
+	font-family: Lustria;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	display: flex;
@@ -41,17 +47,27 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	font-family: Lustria;
+	margin: auto;
+	font-family: Lato;
+	font-weight: 600;
+	/* text-shadow: 2px 2px 5px #353535; */
+}
+
+h1>span {
+	background-color: var(--color-light);
+	padding: 0 30px 5px;
+	border-radius: 15% / 45%;
+	/* border-top: 5px solid var(--color-light); */
+	/* border-bottom: 1px solid var(--color-secondary);
+	border-left: 1px solid var(--color-secondary);
+	border-right: 1px solid var(--color-secondary); */
+	box-shadow: 0px 9px var(--color-secondary),
+				2px 10px var(--color-light),
+				-2px 10px var(--color-light);
 }
 
 h2 {
 	font-size: 1.1em;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
 }
 
 @media only screen and (min-width: 600px) {

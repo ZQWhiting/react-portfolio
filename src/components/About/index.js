@@ -1,20 +1,26 @@
 import React from 'react';
 import photo from '../../assets/images/me.jpg';
 import bioText from '../../assets/content/bio_text';
+import className from 'classnames'
 import './style.css';
 
 function About() {
 	return (
 		<section>
-			<h1>About me</h1>
+			<h1><span>About me</span></h1>
 			<div className='photo frame'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
-			{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
-				<p key={'paragraph' + i} className='bio-text'>
-					{paragraph}
-				</p>
-			))}
+			<div id='bio-text-wrapper'>
+					{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
+						<p key={'paragraph' + i} className={className(
+							'bio-text',
+							i === 0 && 'newspaper'
+						)}>
+							{paragraph}
+						</p>
+					))}
+			</div>
 		</section>
 	);
 }
