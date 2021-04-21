@@ -1,9 +1,9 @@
 const bioText = `
 Hello,\r\n
 
-I am Zachary Q. Whiting. I am a full-stack web developer, certified in the MERN stack, looking for a full-time position. I am also a musician, writer, philosopher, theologist, and husband.\r\n
+I am Zachary Q. Whiting. I am a full-stack web developer certified in the MERN stack, and I am looking for a full-time position. I am also a musician, writer, philosopher, theologist, and husband.\r\n
 
-I was born and raised in West Jordan, Utah, to two loving parents. My personality as a child was energetic and thoughtful, but I was untaught when it came to socializing. My biggest redeeming qualities were my intellect and my desire to do good, though they both turned out to be double-edged. Being a sensitive and purpose-driven child, my social inability and what I perceived as the lack of any real purpose in the world of children created deep traumas in me.\r\n
+I was born and raised in West Jordan, Utah, to two loving parents. My personality as a child was energetic and intelligent, but I was socially untaught. My biggest redeeming qualities were my intellect and my desire to do good, though they both turned out to be double-edged. Being a sensitive and purpose-driven child, my inability to make meaningful connections and what I perceived as the lack of any real purpose in the world of children traumatized me.\r\n
 
 Come highschool, and I was consumed by fear and hopelessness, believing that nothing mattered and all people were fake. I was hospitalized and diagnosed with severe depression and anxiety, which led me to drop out in my senior year. I got my GED with high marks the following fall, and over the next few years I worked off and on in offices and food service, but I spent most of my time exploring the fictional worlds of Asia through their unique visual and written media. Ironically, during this time of little educational progression, I learned a great deal about life, death, and love, all of which pushed me towards the light of understanding.\r\n
 

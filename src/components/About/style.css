@@ -52,23 +52,30 @@
 } */
 
 .newspaper::first-letter {
-	font-size: 200%;
+	font-size: 150%;
 	font-family: Lato;
 	color: var(--color-primary)
 }
 
 .newspaper::first-line {
-	font-size: 200%;
+	font-size: 150%;
 	font-weight: 100;
 	color: var(--color-primary)
 }
 
 @media only screen and (min-width: 600px) {
 	.photo {
-        height: 320px;
-        width: 360px;
-        float: right;
-        margin: 30vh 5vw 3vh 5vw;
+        height: 360px;
+        width: 380px;
+        float: left;
+        margin: 30vh 3.1vw 3vh 0;
     }
+	.newspaper::first-letter {
+		font-size: 200%;
+	}
+
+	.newspaper::first-line {
+		font-size: 200%;
+	}
 }
 
