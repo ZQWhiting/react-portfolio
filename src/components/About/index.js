@@ -7,19 +7,24 @@ import './style.css';
 function About() {
 	return (
 		<section>
-			<h1><span>About me</span></h1>
+			<h1>
+				<span>About Me</span>
+			</h1>
 			<div className='photo frame'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
 			<div id='bio-text-wrapper'>
-					{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
-						<p key={'paragraph' + i} className={className(
+				{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
+					<p
+						key={'paragraph' + i}
+						className={className(
 							'bio-text',
 							i === 0 && 'newspaper'
-						)}>
-							{paragraph}
-						</p>
-					))}
+						)}
+					>
+						{paragraph}
+					</p>
+				))}
 			</div>
 		</section>
 	);

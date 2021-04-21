@@ -11,6 +11,7 @@
 	justify-content: space-between;
 	z-index: 2;
 	width: 100%;
+	box-shadow: 33px 0 33px var(--color-primary);
 }
 
 .logo-container {
@@ -46,6 +47,7 @@
 	text-shadow: 0px 0px 0px transparent;
 	color: var(--color-tetriary);
 	font-size: 5vh;
+	cursor: pointer;
 }
 
 .nav-menu-btn:hover {

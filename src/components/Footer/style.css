@@ -1,6 +1,6 @@
 footer {
-    height: 7.5vh;
-    background: var(--color-green);
+    height: 8.5vh;
+    background: var(--color-tetriary);
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -9,12 +9,27 @@ footer {
     justify-content: center;
 }
 
-footer>a {
+footer>div {
+    flex: 0 0 20%;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--color-primary);
+    border-radius: 15%/ 48%;
+    box-shadow: 5px 2px 1px 0 var(--color-secondary) inset,
+                -5px -2px 1px 0 var(--color-secondary) inset,
+                -6px 3px 1px 0 var(--color-dark) inset,
+                6px -3px 1px 0 var(--color-dark) inset;
+    margin: 5px;
+}
+
+footer>div>a {
     color: var(--color-light);
     margin: auto 2vw;
     font-size: 5vh;
+    /* background-color: var(--color-primary); */
+    padding: 2px 7px 0;
 }
 
-footer>a:hover {
-    color: var(--color-brown)
+footer>div>a:hover {
+    color: var(--color-tetriary)
 }

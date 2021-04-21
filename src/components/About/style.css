@@ -2,6 +2,7 @@
     height: 220px;
     width: 250px;
     margin: auto;
+	/* transform: rotate3d(1,1,1, 45deg) */
 }
 .photo img {
 	height: 100%;
@@ -16,7 +17,7 @@
 
 .frame {
 	background-color: var(--color-dark);
-	border: solid 3.5vmin rgba(var(--color-light-rgb), 0.8);
+	border: solid 5.5vmin rgba(var(--color-light-rgb), 0.8);
 	border-bottom-color: rgba(var(--color-light-rgb), 1);
 	border-left-color: rgba(var(--color-light-rgb), 0.8);
 	border-radius: 2px;
@@ -31,28 +32,35 @@
 }
 .frame:before {
 	border-radius: 2px;
-	bottom: -0.5vmin;
+	bottom: -3.5vmin;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
 	content: '';
-	left: -0.5vmin;
+	left: -3.5vmin;
 	position: absolute;
-	right: -0.5vmin;
-	top: -0.5vmin;
+	right: -3.5vmin;
+	top: -3.5vmin;
 }
-.frame:after {
+/* .frame:after {
 	border-radius: 2px;
 	bottom: -1vmin;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
 	content: '';
 	left: -1vmin;
 	position: absolute;
 	right: -1vmin;
     top: -1vmin;
-}
+} */
 
 .newspaper::first-letter {
 	font-size: 200%;
 	font-family: Lato;
+	color: var(--color-primary)
+}
+
+.newspaper::first-line {
+	font-size: 200%;
+	font-weight: 100;
+	color: var(--color-primary)
 }
 
 @media only screen and (min-width: 600px) {
@@ -60,9 +68,7 @@
         height: 320px;
         width: 360px;
         float: right;
-        margin: 0;
-		margin-left: 3vw;
-		margin-top: 30px;
+        margin: 30vh 5vw 3vh 5vw;
     }
 }
 

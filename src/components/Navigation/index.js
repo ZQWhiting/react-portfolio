@@ -5,10 +5,10 @@ import './style.css';
 function Navigation(props) {
 	const { selectedSection, setSelectedSection } = props;
 	const navLinks = [
-		{ name: 'About me' },
-		{ name: 'Resume' },
+		{ name: 'About Me' },
 		{ name: 'Portfolio' },
 		{ name: 'Contacts' },
+		{ name: 'Resume' },
 	];
 	return (
 		<ul className='nav-menu'>
