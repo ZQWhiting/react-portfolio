@@ -1,44 +1,48 @@
 #resume {
-    display:flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
 }
 
-#resume h1, #resume a {
-    flex: 1 100%;
-    text-align: center;
+#resume h1,
+#resume a {
+	flex: 1 100%;
+	text-align: center;
 }
 
 #resume a {
-    color: var(--color-dark);
-    text-shadow: 0.5px 0.5px var(--color-primary);
+	color: var(--color-dark);
+	text-shadow: 0.5px 0.5px var(--color-primary);
 }
 
 #resume div {
-    margin: 1.8vh 2vw;
+	margin: 1.8vh 2vw;
 }
 
 #proficiencies {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
 }
 
 #proficiencies li {
-    flex: 1 0 auto;
-    margin: 3px 5px;
-    padding: 2px 5px;
-    background: var(--color-dark);
-    box-shadow: 2px 2px var(--color-primary);
-    text-align: center;
-    color: var(--color-light)
+	flex: 1 0 auto;
+	margin: 3px 5px;
+	padding: 2px 5px;
+	background: var(--color-dark);
+	box-shadow: 2px 2px var(--color-primary);
+	text-align: center;
+	color: var(--color-light);
 }
 
+#resume svg {
+	margin-left: 20px;
+}
 
 @media only screen and (min-width: 600px) {
 	#resume div {
-        flex: 1 40%;
-        padding-left: 6vw;
+		flex: 1 40%;
+		padding-left: 6vw;
 	}
 }

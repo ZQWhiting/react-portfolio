@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import wordResume from '../../assets/content/resume.docx';
 import pdfResume from '../../assets/content/resume.pdf';
 import proficiencies from '../../assets/content/proficiencies';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 function Resume() {
@@ -27,6 +29,7 @@ function Resume() {
 				target='_blank'
 			>
 				Download Resume.docx
+				<FontAwesomeIcon icon={faFileDownload}></FontAwesomeIcon>
 			</a>
 			<div>
 				<h2>Proficiencies:</h2>

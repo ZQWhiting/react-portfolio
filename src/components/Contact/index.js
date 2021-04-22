@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
 	useEffect(() => {
@@ -36,6 +38,9 @@ function Contact() {
 									rel='noopener noreferrer'
 								>
 									github.com/ZQWhiting
+									<FontAwesomeIcon
+										icon={faExternalLinkAlt}
+									/>
 								</a>
 							</td>
 						</tr>
@@ -48,6 +53,9 @@ function Contact() {
 									rel='noopener noreferrer'
 								>
 									linkedin.com/in/zqwhiting
+									<FontAwesomeIcon
+										icon={faExternalLinkAlt}
+									/>
 								</a>
 							</td>
 						</tr>
@@ -60,6 +68,9 @@ function Contact() {
 									rel='noopener noreferrer'
 								>
 									facebook.com/zachary.whiting.796
+									<FontAwesomeIcon
+										icon={faExternalLinkAlt}
+									/>
 								</a>
 							</td>
 						</tr>

@@ -37,3 +37,7 @@ td>a:hover {
 	text-shadow: 0.5px 0.5px 0px var(--color-light);
 	border-bottom: 2px solid var(--color-dark);
 }
+
+td svg {
+	margin-left: 20px;
+}
