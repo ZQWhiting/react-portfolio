@@ -7,9 +7,8 @@ table {
 	flex: 1 1 100%;
 	table-layout: fixed;
 	word-wrap: break-word;
+	border-spacing: 10px 20px;
 	width: 100%;
-	border-spacing: 3px 5px;
-	/* table-layout: auto; */
 }
 
 td:first-child {
