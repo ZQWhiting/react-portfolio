@@ -3,15 +3,17 @@ import './style.css';
 
 function Contact() {
 	return (
-		<>
-			<h1>My Contacts</h1>
+		<section>
+			<h1>
+				<span>Contacts</span>
+			</h1>
 			<address>
 				<table>
 					<tbody>
 						<tr>
 							<td>Phone:</td>
 							<td>
-								<a href='tel:3852376420'>(385) 237-6420</a>
+								<a href='tel:4357081971'>(435) 708-1971</a>
 							</td>
 						</tr>
 						<tr>
@@ -30,7 +32,7 @@ function Contact() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									https://github.com/ZQWhiting
+									github.com/ZQWhiting
 								</a>
 							</td>
 						</tr>
@@ -42,7 +44,7 @@ function Contact() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									https://www.linkedin.com/in/zqwhiting
+									linkedin.com/in/zqwhiting
 								</a>
 							</td>
 						</tr>
@@ -54,14 +56,14 @@ function Contact() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									https://www.facebook.com/zachary.whiting.796
+									facebook.com/zachary.whiting.796
 								</a>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</address>
-		</>
+		</section>
 	);
 }
 

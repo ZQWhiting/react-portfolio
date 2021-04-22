@@ -12,10 +12,13 @@ function Header(props) {
 
 	return (
 		<>
-			<header className={classNames(
-				'header',
-				menuSelected && 'grow'
-			)}>
+			<header
+				className={classNames(
+					'header',
+					menuSelected ? 'grow' : 'shrink'
+				)}
+				onBlur={() => setMenuSelected(false)}
+			>
 				<div className='logo-container'>
 					<img
 						src={logo}
@@ -32,12 +35,12 @@ function Header(props) {
 						<FontAwesomeIcon icon={faBars} alt='navigation menu' />
 					</button>
 				</div>
-				{menuSelected && (
-					<Navigation
-						selectedSection={selectedSection}
-						setSelectedSection={setSelectedSection}
-					/>
-				)}
+
+				<Navigation
+					selectedSection={selectedSection}
+					setSelectedSection={setSelectedSection}
+					menuSelected={menuSelected}
+				/>
 			</header>
 		</>
 	);

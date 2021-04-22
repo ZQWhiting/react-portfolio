@@ -8,7 +8,9 @@ function Resume() {
 	return (
 		<section id='resume'>
 			{/* link to resume */}
-			<h1>Resume</h1>
+			<h1>
+				<span>Resume</span>
+			</h1>
 			<embed
 				src={pdfResume}
 				type='application/pdf'
