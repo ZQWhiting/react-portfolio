@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import photo from '../../assets/images/me.jpg';
 import bioText from '../../assets/content/bio_text';
-import className from 'classnames'
+import className from 'classnames';
 import './style.css';
 
 function About() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<section>
 			<h1>

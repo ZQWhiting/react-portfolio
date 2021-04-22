@@ -14,6 +14,10 @@ function Navigation({ selectedSection, setSelectedSection, menuSelected }) {
 		if (!menuSelected) setRender(false);
 	};
 
+	const handleNavChange = (name) => {
+		setSelectedSection(`${name[0]}`);
+	};
+
 	const navLinks = [
 		{ name: 'About Me' },
 		{ name: 'Portfolio' },
@@ -40,7 +44,7 @@ function Navigation({ selectedSection, setSelectedSection, menuSelected }) {
 										? 'isActive'
 										: ''
 								}
-								onClick={() => setSelectedSection(`${name[0]}`)}
+								onClick={handleNavChange(name)}
 							>
 								<span>{name.join(' ')}</span>
 							</Link>

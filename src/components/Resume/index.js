@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import wordResume from '../../assets/content/resume.docx';
 import pdfResume from '../../assets/content/resume.pdf';
 import proficiencies from '../../assets/content/proficiencies';
 import './style.css';
 
 function Resume() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<section id='resume'>
-			{/* link to resume */}
 			<h1>
 				<span>Resume</span>
 			</h1>
@@ -20,13 +22,12 @@ function Resume() {
 			/>
 			<a
 				href={wordResume}
-				download
+				download='ZQWhitingResume.docx'
 				rel='noopener noreferrer'
 				target='_blank'
 			>
-				Download resume.(docx)
+				Download Resume.docx
 			</a>
-			{/* a list of developer's proficiencies */}
 			<div>
 				<h2>Proficiencies:</h2>
 				<ul id='proficiencies'>

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Project from '../Project';
 import projects from '../../assets/content/projects';
 import './style.css';
 
 function Portfolio() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<section>
 			<h1>
