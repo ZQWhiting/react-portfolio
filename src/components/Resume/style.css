@@ -11,8 +11,8 @@
 }
 
 #resume a {
-    color: var(--color-brown);
-    text-shadow: 0.5px 0.5px var(--color-green);
+    color: var(--color-dark);
+    text-shadow: 0.5px 0.5px var(--color-primary);
 }
 
 #resume div {
@@ -29,9 +29,10 @@
     flex: 1 0 auto;
     margin: 3px 5px;
     padding: 2px 5px;
-    background: var(--color-light-green);
-    box-shadow: 2px 2px var(--color-green);
+    background: var(--color-dark);
+    box-shadow: 2px 2px var(--color-primary);
     text-align: center;
+    color: var(--color-light)
 }
 
 
