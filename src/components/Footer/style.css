@@ -17,8 +17,10 @@ footer>div {
     border-radius: 15%/ 48%;
     box-shadow: 5px 2px 1px 0 var(--color-secondary) inset,
                 -5px -2px 1px 0 var(--color-secondary) inset,
-                -6px 3px 1px 0 var(--color-dark) inset,
-                6px -3px 1px 0 var(--color-dark) inset;
+                -4px 0px 5px 0 var(--color-light) inset,
+                4px 0px 5px 0 var(--color-light) inset,
+                -7px 4px 1px 0 var(--color-dark) inset,
+                7px -4px 1px 0 var(--color-dark) inset;
     margin: 5px;
 }
 
