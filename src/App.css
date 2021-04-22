@@ -11,7 +11,7 @@ main {
   background: var(--color-tetriary);
   margin: 0;
   flex-grow: 1;
-  padding: 2vh 10vw;
+  padding: 2vh 5vw;
 }
 
 main>section>h1 {
@@ -39,5 +39,8 @@ main>section>h1>span {
   }
   #bio-text-wrapper {
     margin-top: 20vh;
+  }
+  main {
+    padding: 2vh 10vw;
   }
 }

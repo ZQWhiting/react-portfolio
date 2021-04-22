@@ -3,7 +3,10 @@ import wordResume from '../../assets/content/resume.docx';
 import pdfResume from '../../assets/content/resume.pdf';
 import proficiencies from '../../assets/content/proficiencies';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import {
+	faFileDownload,
+	faExternalLinkAlt,
+} from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 function Resume() {
@@ -15,13 +18,10 @@ function Resume() {
 			<h1>
 				<span>Resume</span>
 			</h1>
-			<embed
-				src={pdfResume}
-				type='application/pdf'
-				width='100%'
-				height='600px'
-				style={{ maxHeight: 80 + 'vh' }}
-			/>
+			<a href={pdfResume} rel='noopener noreferrer' target='_blank'>
+				Link to Resume.pdf
+				<FontAwesomeIcon icon={faExternalLinkAlt}></FontAwesomeIcon>
+			</a>
 			<a
 				href={wordResume}
 				download='ZQWhitingResume.docx'
