@@ -1,72 +1,113 @@
 @import '../../css/global';
 
 .img-wrapper {
-    position: relative;
-    height: 100%;
+	position: relative;
+	height: 100%;
 
-    img {
-        width: 100%;
-        position: aboslute;
-        height: 100%;
-    }
+	img {
+		width: 100%;
+		position: aboslute;
+		height: 100%;
+	}
 
-    &:hover {
-        transform: scale(0.95, 0.95);
-        transition: linear 0.1s;
-    }
+	&:hover {
+		transform: scale(0.95, 0.95);
+		transition: linear 0.1s;
+	}
 }
 
 .project-link-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0;
-    background-color: $color-light;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 8%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	opacity: 0;
+	flex-wrap: wrap;
+	background-color: $color-light;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 8%;
 
-    &:hover {
-        opacity: 0.8;
-        transform: scale(1.05, 1.05);
-        transition: linear 0.4s;
-    }
+	a {
+		flex: 1 1 100%;
+		margin: 0 auto;
+		display: none;
+		color: $color-primary;
+		white-space: normal;
+		text-align: center;
 
-    a {
-        flex: 1 1 100%;
-        margin: 0 auto;
-        opacity: 0.5;
-        color: $color-primary;
-        white-space:normal;
-        text-align: center;
-
-        sup>svg {
-            // margin-left: 2px;
-            transform: scale(0.7)
+        &:first-of-type {
+            margin-top: 1.9vw;
+            font-size: 6.5vw;
         }
 
-        &:hover {
-            opacity: 1;
-            transition: linear 0.2s;
-            transform: scale(1.1);
+        &:last-of-type {
+            font-size: 12vw;
         }
-    }
+
+		sup > svg {
+			transform: scale(0.7);
+		}
+	}
 }
 
 @media only screen and (min-width: 600px) {
-    .project-link-container {
-        a {
-            &:first-of-type {
-                margin-top: 1.9vw;
-                font-size: 2.5vw;
-            }
+	.project-link-container {
+		a {
+			&:first-of-type {
+				margin-top: 1.9vw;
+				font-size: 2.5vw;
+			}
 
-            &:last-of-type {
-                font-size: 4vw;
-            }
-        }
-    }
+			&:last-of-type {
+				font-size: 4vw;
+			}
+		}
+	}
+}
+
+@media (pointer: coarse) {
+	.project-link-container {
+		background-color: transparent;
+		opacity: 1;
+		a {
+			display: block;
+			color: $color-light;
+			background: $color-primary;
+            border-radius: 10%/50%;
+			margin-left: auto;
+			margin-right: auto;
+            padding: 10px;
+
+			&:last-of-type {
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				background-color: transparent;
+
+				svg {
+					background-color: $color-primary;
+                    border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media (hover: hover) {
+	.project-link-container {
+		& > a:hover {
+			transition: linear 0.2s;
+			transform: scale(1.1);
+		}
+		&:hover {
+			opacity: 0.8;
+			transform: scale(1.05, 1.05);
+			transition: linear 0.4s;
+			a {
+				display: block;
+			}
+		}
+	}
 }

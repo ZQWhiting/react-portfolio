@@ -1,13 +1,14 @@
 #project-grid {
 	display: grid;
 	margin: auto;
-	gap: 2vmin;
-	grid-template-rows: auto;
+	gap: 5vh;
+	grid-auto-rows: 1fr;
 }
 
 @media only screen and (min-width: 600px) {
 	#project-grid {
 		grid-template-columns: repeat(3, 1fr);
+		gap: 2vmin;
 
 		&>div:first-of-type {
 			grid-area: 1 / 1 / 2 span / 2 span;
