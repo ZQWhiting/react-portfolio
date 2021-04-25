@@ -52,10 +52,21 @@
 }
 
 .newspaper {
-	&::first-line, &::first-letter {
+	p:first-of-type {
 		font-size: 150%;
 		font-family: Lato;
-		color: $color-primary
+		color: $color-primary;
+
+		&::first-letter {
+			font-size: 150%;
+		}
+	}
+}
+
+.signature {
+	p:last-of-type {
+		font-size: 150%;
+		font-weight: 600;
 	}
 }
 

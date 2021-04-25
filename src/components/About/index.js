@@ -16,15 +16,12 @@ function About() {
 			<div className='photo frame'>
 				<img src={photo} alt='Zachary Q. Whiting' />
 			</div>
-			<div id='bio-text-wrapper'>
+			<div
+				id='bio-text-wrapper'
+				className={className('newspaper', 'signature')}
+			>
 				{bioText.split(/(?:\r\n)/g).map((paragraph, i) => (
-					<p
-						key={'paragraph' + i}
-						className={className(
-							'bio-text',
-							i === 0 && 'newspaper'
-						)}
-					>
+					<p key={'paragraph' + i} className={className('bio-text')}>
 						{paragraph}
 					</p>
 				))}
