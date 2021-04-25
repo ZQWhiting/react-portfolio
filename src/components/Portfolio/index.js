@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Project from '../Project';
 import projects from '../../assets/content/projects';
-import './style.css';
+import './style.scss';
 
 function Portfolio() {
 	useEffect(() => {

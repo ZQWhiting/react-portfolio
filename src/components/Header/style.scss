@@ -1,0 +1,124 @@
+@import '../../css/_global.scss';
+
+.header {
+	color: $color-secondary;
+	background: $color-primary;
+	box-shadow: 33px 0 33px $color-primary;
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 2;
+	top: 0;
+
+
+}
+
+.logo-container {
+	position: absolute;
+	flex: 0 0 22vw;
+	z-index: 2;
+
+	img {
+		width: 90%;
+		margin: 1vh 0;
+		width: 22vw;
+		min-width: 15vh;
+		max-width: 15vmax;
+		background-color: $color-primary;
+		border-bottom-left-radius: 51%;
+		border-bottom-right-radius: 47%;
+		margin-left: -10px;
+	}
+}
+
+.nav-btn-container {
+	flex: 1 0 88vw;
+	height: 15vh;
+	display: flex;
+}
+
+.nav-menu-btn {
+	margin-left: auto;
+	margin-top: auto;
+	background: transparent;
+	box-shadow: 0px 0px 0px transparent;
+	border: 0px solid transparent;
+	text-shadow: 0px 0px 0px transparent;
+	color: $color-tetriary;
+	font-size: 7vmin;
+	cursor: pointer;
+
+	&:hover {
+		background: transparent;
+		box-shadow: 0px 0px 0px transparent;
+		border: 0px solid transparent;
+		text-shadow: 0px 0px 0px transparent;
+		color: $color-light;
+	}
+
+	&:active {
+		outline: none;
+		border: none;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+.isActive {
+	color: $color-light;
+
+	&:hover {
+		color: $color-tetriary;
+	}
+}
+
+.grow {
+	animation: grow 1s both;
+}
+
+.shrink {
+	animation: shrink 1s both;
+}
+
+@keyframes grow {
+	0% {
+		height: 15vh
+	}
+
+	100% {
+		height: calc(30vh + 5px + 10vmin);
+	}
+}
+
+@keyframes shrink {
+	0% {
+		height: calc(30vh + 5px + 10vmin);
+	}
+
+	100% {
+		height: 15vh;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	@keyframes grow {
+		0% {
+			height: 15vh
+		}
+
+		100% {
+			height: calc(30vh);
+		}
+	}
+
+	@keyframes shrink {
+		0% {
+			height: calc(30vh);
+		}
+
+		100% {
+			height: 15vh;
+		}
+	}
+}

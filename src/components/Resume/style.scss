@@ -1,0 +1,50 @@
+@import '../../css/global';
+
+#resume {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+
+	h1, a {
+		flex: 1 100%;
+		text-align: center;
+	}
+	a {
+		color: $color-dark;
+		text-shadow: 0.5px 0.5px $color-primary;
+	}
+	div {
+		margin: 1.8vh 2vw;
+	}
+	svg {
+		margin-left: 20px;
+	}
+}
+
+#proficiencies {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+
+	li {
+		flex: 1 0 auto;
+		/* margin: 3px 5px; */
+		padding: 2px 5px;
+		background: $color-primary;
+		/* box-shadow: 0px 2px $color-primary); */
+		border-bottom: 3px solid rgba($color-light, 0.4);
+		border-top: 3px solid rgba($color-light, 1);
+		border-left: 3px solid rgba($color-light, 0.8);
+		border-right: 3px solid rgba($color-light, 0.6);
+		text-align: center;
+		color: $color-light;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#resume div {
+		flex: 1 40%;
+		padding-left: 6vw;
+	}
+}

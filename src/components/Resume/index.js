@@ -7,7 +7,7 @@ import {
 	faFileDownload,
 	faExternalLinkAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import './style.css';
+import './style.scss';
 
 function Resume() {
 	useEffect(() => {

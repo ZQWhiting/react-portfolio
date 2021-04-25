@@ -5,7 +5,7 @@ import {
 	faFacebook,
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import './style.css';
+import './style.scss';
 
 function Footer() {
 	return (

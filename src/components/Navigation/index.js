@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
+import './style.scss';
 
 function Navigation({ selectedSection, setSelectedSection, menuSelected }) {
 	const [render, setRender] = useState(menuSelected);

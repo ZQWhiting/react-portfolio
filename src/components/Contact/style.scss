@@ -1,0 +1,44 @@
+@import '../../css/_global.scss';
+
+address {
+	display: flex;
+	max-width: 90vw;
+	word-break: break-word;
+
+	table {
+		flex: 0 1 auto;
+		table-layout: fixed;
+		border-spacing: 10px 20px;
+		max-width: 90vw;
+		margin: auto;
+
+		td {
+			background: $color-light;
+			box-shadow: 2px 2px $color-primary;
+			text-align: center;
+			padding: 15px 15px;
+
+			&:first-child {
+				white-space: nowrap;
+			}
+
+			a {
+				color: $color-primary;
+				text-decoration: none;
+				border-bottom: 2px solid $color-primary;
+
+				&:hover {
+					color: $color-tetriary;
+					text-shadow: 0.5px 0.5px 0px $color-light;
+					border-bottom: 2px solid $color-tetriary;
+				}
+			}
+
+			svg {
+				margin-left: 2px;
+				transform: scale(0.7)
+			}
+		}
+	}
+}
+

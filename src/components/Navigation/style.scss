@@ -1,0 +1,74 @@
+@import '../../css/_global.scss';
+
+.nav-menu {
+	background: $color-primary;
+	flex: 0 1 calc(100vw - 15vmax);
+	max-width: calc(100vw - 15vmax);
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 1;
+	margin: 0 auto;
+	padding: 4vh 2.2vw;
+	border-radius: 10% / 50%;
+}
+
+.nav-link {
+	margin: 10px;
+	flex: 1 1 auto;
+	text-align: center;
+	font-size: calc(5px + 3vmin);
+
+	a {
+		text-decoration: none;
+		border-bottom: 3px solid $color-tetriary;
+
+		&:hover {
+			color: $color-secondary;
+			border-color: $color-secondary;
+		}
+	}
+
+	.isActive {
+		border-color: $color-light;
+	}
+}
+
+.fadeIn {
+	animation: fadeIn 1s both;
+}
+
+.fadeOut {
+	animation: fadeOut 1s both;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(-30vh);
+		opacity: 0;
+		background-color: $color-tetriary;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		background-color: transparent;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		background-color: transparent;
+	}
+	100% {
+		transform: translateY(-30vh);
+		opacity: 0;
+		background-color: $color-tetriary;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.nav-menu {
+		margin: 0;
+		margin-left: auto;
+	}
+}

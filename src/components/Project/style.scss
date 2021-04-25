@@ -1,0 +1,52 @@
+@import '../../css/global';
+
+.img-wrapper {
+    position: relative;
+    height: 100%;
+
+    img {
+        width: 100%;
+        position: aboslute;
+        height: 100%;
+    }
+
+    &:hover {
+        transform: scale(0.95, 0.95);
+        transition: linear 0.1s;
+    }
+}
+
+.project-link-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 6vh;
+    display: flex;
+    opacity: 0;
+    background-color: $color-light;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 8%;
+
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.05, 1.05);
+        transition: linear 0.4s;
+    }
+
+    a {
+        opacity: 0.5;
+        color: $color-primary;
+
+        &:hover {
+            opacity: 1;
+            transition: linear 0.2s;
+            transform: scale(1.1);
+        }
+
+        &:first-of-type {
+            margin-right: 8%;
+        }
+    }
+}

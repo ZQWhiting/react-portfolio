@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Navigation from '../Navigation';
 import classNames from 'classnames';
 import logo from '../../assets/images/logo.png';
-import './style.css';
+import './style.scss';
 
 function Header(props) {
 	const { selectedSection, setSelectedSection } = props;

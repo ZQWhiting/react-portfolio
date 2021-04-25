@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style.css';
+import './style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,14 +33,13 @@ function Contact() {
 							<td>Github:</td>
 							<td>
 								<a
+									className='external-link'
 									href='https://github.com/ZQWhiting'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
 									github.com/ZQWhiting
-									<FontAwesomeIcon
-										icon={faExternalLinkAlt}
-									/>
+									<sup><FontAwesomeIcon icon={faExternalLinkAlt} /></sup>
 								</a>
 							</td>
 						</tr>
@@ -48,14 +47,13 @@ function Contact() {
 							<td>LinkedIn:</td>
 							<td>
 								<a
+									className='external-link'
 									href='https://www.linkedin.com/in/zqwhiting'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
 									linkedin.com/in/zqwhiting
-									<FontAwesomeIcon
-										icon={faExternalLinkAlt}
-									/>
+									<sup><FontAwesomeIcon icon={faExternalLinkAlt} /></sup>
 								</a>
 							</td>
 						</tr>
@@ -63,14 +61,13 @@ function Contact() {
 							<td>Facebook:</td>
 							<td>
 								<a
+									className='external-link'
 									href='https://www.facebook.com/zachary.whiting.796'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
 									facebook.com/zachary.whiting.796
-									<FontAwesomeIcon
-										icon={faExternalLinkAlt}
-									/>
+									<sup><FontAwesomeIcon icon={faExternalLinkAlt} /></sup>
 								</a>
 							</td>
 						</tr>

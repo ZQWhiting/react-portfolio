@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import photo from '../../assets/images/me.jpg';
 import bioText from '../../assets/content/bio_text';
 import className from 'classnames';
-import './style.css';
+import './style.scss';
 
 function About() {
 	useEffect(() => {
