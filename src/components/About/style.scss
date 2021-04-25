@@ -75,24 +75,22 @@
 		height: 60vmin;
 		width: 68vmin;
 		float: left;
-		margin: 170px 2ch 1ch 1ch;
-	}
-	.newspaper {
-		&::first-line, &::first-letter {
-			font-size: 175%;
-			font-family: Lato;
-			color: $color-primary
-		}
+		margin: 80px 2ch 1ch 1ch;
 	}
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
 	.photo {
         height: 28vmax;
         width: 30vmax;
+		margin: 220px 2ch 1ch 1ch;
     }
 	.newspaper {
-		&::first-line, &::first-letter {
-			font-size: 200%;
+		p:first-of-type {
+			font-size: 235%;
+
+			&::first-letter {
+				font-size: 235%;
+			}
 		}
 	}
 	.frame {
