@@ -9,11 +9,20 @@
 	#project-grid {
 		grid-template-columns: repeat(3, 1fr);
 
-		div:first-child {
+		&>div:first-of-type {
 			grid-area: 1 / 1 / 2 span / 2 span;
 
 			.project-link-container > a:hover {
 				transform: scale(1.1);
+			}
+
+			a:first-of-type {
+				margin-top: 1.9vw;
+				font-size: 6.1vw;
+			}
+
+			a:last-of-type {
+				font-size: 8vw;
 			}
 		}
 

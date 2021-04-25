@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './style.scss';
 
 function Project({ title, image, deployed, repo }) {
@@ -15,9 +16,12 @@ function Project({ title, image, deployed, repo }) {
 						rel='noopener noreferrer'
 					>
 						{title}
+						<sup>
+							<FontAwesomeIcon icon={faExternalLinkAlt} />
+						</sup>
 					</a>
 					<a href={repo} target='_blank' rel='noopener noreferrer'>
-						<FontAwesomeIcon icon={faGithub}     />
+						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</div>
 			</div>
