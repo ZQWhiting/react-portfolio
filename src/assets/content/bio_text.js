@@ -1,30 +1,30 @@
 const bioText = `
 Hello,\r\n
 
-I am Zachary Q. Whiting. I am a certified full-stack web developer, and I am looking for a remote full-time position for a company that values helping people. In my non-professional life, I am also a writer, philosopher, theologist, and husband. I hope this portfolio will give you some insight into who I am and what I am capable of so that you can judge if I would be a good fit for collaboration.\r\n
+I am Zachary Q. Whiting, full-stack web developer specializing in the MERN stack.
+I have 1000+ hours of coding experience across all stages of web development, an attention to detail,
+and a proven ability to quickly learn new programming languages and APIs.
+I am currently seeking a full-time 100%-remote position, but I am also open to other forms of remote work.\r\n
 
-I was born and raised in West Jordan, Utah to two loving parents. As a child, I was energetic and intelligent, which served me well in piano, sports, and school⁠—but I was rather untaught socially. Being a sensitive and purpose-driven child, my inability to make meaningful connections and what I perceived as the lack of any real purpose in the world of children ended up traumatizing me.\r\n
+I've both created and collaborated on over thirty web programs which include everything
+from pure html websites to highly scalable websites using template engines, mostly React.
+I've trained to use many different methodologies including Object Oriented Programming,
+Functional Programming, Test Driven Development, Mobile-First Responsiveness, Representational State Transfer,
+and Agile Development, and I've used these methods to create PWAs, CMS blogs, e-commerce sites,
+search engines, APIs, file generators, and more.\r\n
 
-By the time I was in highschool, I was consumed by fear and hopelessness, believing that nothing mattered and all people were fake. I was hospitalized and diagnosed with severe depression and anxiety, and I ended up dropping out of school in my senior year. I then went on to get my GED with high marks the following fall, and over the next few years I worked off and on in a restaurant and some offices. I spent most of my time, however, exploring the fictional worlds of Asia through their unique visual and written media. Ironically, during this time of little financial and educational progression, I learned a great deal about life, death, and love, all of which pushed me towards the understanding that would allow me to heal and progress.\r\n
+Design wise, all my apps use modern CSS3 and/or SCSS with features such as flexbox and grid or a
+CSS framework like Bootstrap, and I have implemented wireframes as well as created my own original designs.
+In the back end, I have experience with both SQL and NoSQL servers
+and have built authentication, RESTful, and GraphQL services.\r\n
 
-It was when I was 24 that I recovered enough to advance my education by attending college. Being enamoured with fiction, I took a class on creative writing⁠—a very rewarding class. I discovered that over the years, even though I had never written seriously before, I had inadvertently developed a talent in language and writing, and my purpose-driven instincts took my creative compositions to heights that I couldn't have previously imagined. And so, I became a writer and artist.\r\n
+I believe that vision and organization are the key components a project needs to determine success.
+As an aspiring novelist, I've trained to place these values at the forefront of my attention.
+Transferring my skills over to computer coding has only deepened my appreciation of their value, and I'm
+very much looking forward to expanding my abilities even more in the collaborative setting of web development.\r\n
 
-My writing also led me to my wife, as we met in grammer class the following semester. We quickly became best friends, but we kept ourselves romantically distant due to some differences in our values. However, as the semester was coming to a close, we decided that pursuing a romantic relationship would be more beneficial to us than staying distant. Suddenly and unexpectedly, the hypothetical ponderings about love we had growing up became our reality, and our values and goals quickly came together to become one.\r\n
-
-We began to develop our relationship with psychology, philosophy and religion as our teachers and pure love as the goal. The journey to becoming my wife's husband was terrifying at times, and it brought us both back to the darkest moments in our lives, but somehow there was always more than enough love to pull us through. I cannot describe how liberating it is to truly connect to someone, believing that everything is real and has meaning, when previously, all was darkness. Navigating through life with my wife has been the greatest joy, and for the first time, I have real purpose and motivation. It still feels like we've only just begun to address the concerns of life together⁠—but we are also frequently astounded at how many we've overcome.\r\n
-
-One of the many concerns before we were married was my career plan, as writing wouldn't be a reliable income any time soon. During my search, I stumbled across the University of Utah Online Coding Bootcamp. I was actually pretty hesitant about it at first. I was attached to writing, I didn't grow up dreaming about designing web pages or apps, and I knew almost nothing about coding. Also, the online tutorials where I created pictures by moving around css-generated shapes with exact pixel measurements? Dreadful. But the short six-month intensive program and the potential career I could have afterwards were enough to get me to apply.\r\n
-
-I took to coding much like I took to writing. I was already equipped to learn it quickly, and I found enjoyment in learning the intricate rules, methods, and syntaxes and piecing them together to create a functional composition. It is a treat to take a design or a need and turn it into a useful and comfortable tool that benefits the involved parties. And taking coding into my personal life, I've even made a rudimentary philosophy stating that the various containers and data-manipulations in programming are typical of (or parallel) human activity and behavior, which has helped me visualize improvements in my own beliefs and behaviors. I do not hesitate anymore to say that web development has become an exciting career choice, and I expect it to lead to great things.\r\n
-
-The University of Utah's bootcamp was effective in teaching me all the required knowledge for programming. I am now proficient in creating full-stack applications using popular methods and technologies while adhering to best practices, and I can also make design decisions in each of the model, view, and controller aspects of web development, amongst other skills. Of course, there's always more that I don't know—as is the nature of life—but I now have a solid foundation to branch out from as I am faced with the new problems and challenges ahead.\r\n
-
-As I stated in my introduction, my next goal is to find a position where I can use the skills I have obtained through the University's bootcamp and since to support my family's growth and improve the lives of my fellow people. Until then, programming is largely an activity of personal development that I balance alongside my writing. Long term, I hope to contribute to the healthy growth of children using programming as one of my teaching tools. I am determined to increase my knowledge and experience in programming in order to achieve these goals.\r\n
-
-If you are looking to hire, I ask that you consider me for the position and create a meaningful impact as the first company to enrich my post-marriage finances and goals. Please help yourself to my portfolio and send me any inquiries you may have. I'd love to answer any questions or schedule an interview.\r\n
-
-Thank you for your interest,\r\n
-Zachary Q. Whiting
+I am eager to learn and grow, not only as a developer, but also as a person,
+and I am positive that I am prepared to exceed any standards as a junior developer.\r\n
 `;
 
 export default bioText;
