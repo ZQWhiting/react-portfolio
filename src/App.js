@@ -9,6 +9,10 @@ import Resume from './components/Resume';
 import NotFound from './components/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+function Maintenance() {
+	return 'Under maintenance. Check back later.';
+}
+
 function App() {
 	const [selectedSection, setSelectedSection] = useState('About');
 
@@ -21,7 +25,11 @@ function App() {
 				/>
 				<main>
 					<Switch>
-						<Route exact path={['/', '/about']} component={About} />
+						<Route
+							exact
+							path={['/', '/about']}
+							component={Maintenance}
+						/>
 						<Route
 							exact
 							path={'/portfolio'}
