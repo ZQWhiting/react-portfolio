@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.0c5180e6.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.de97c5ac.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.de97c5ac.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.f00a47a1.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.f00a47a1.js.map",
-    "static/js/2.1bcdb2a8.chunk.js": "/react-portfolio/static/js/2.1bcdb2a8.chunk.js",
-    "static/js/2.1bcdb2a8.chunk.js.map": "/react-portfolio/static/js/2.1bcdb2a8.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.9f23d9c2.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.1d53ab56.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.1d53ab56.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.5f767cf3.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.5f767cf3.js.map",
+    "static/js/2.639df2b9.chunk.js": "/react-portfolio/static/js/2.639df2b9.chunk.js",
+    "static/js/2.639df2b9.chunk.js.map": "/react-portfolio/static/js/2.639df2b9.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.0c5180e6.chunk.css.map": "/react-portfolio/static/css/main.0c5180e6.chunk.css.map",
-    "static/js/2.1bcdb2a8.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.1bcdb2a8.chunk.js.LICENSE.txt",
+    "static/css/main.9f23d9c2.chunk.css.map": "/react-portfolio/static/css/main.9f23d9c2.chunk.css.map",
+    "static/js/2.639df2b9.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.639df2b9.chunk.js.LICENSE.txt",
     "static/media/book_forum.287c6d71.jpg": "/react-portfolio/static/media/book_forum.287c6d71.jpg",
     "static/media/budget_tracker.fef4ba92.jpg": "/react-portfolio/static/media/budget_tracker.fef4ba92.jpg",
     "static/media/deep_thoughts.bc6cc3fa.jpg": "/react-portfolio/static/media/deep_thoughts.bc6cc3fa.jpg",
@@ -26,9 +26,9 @@
     "static/media/wedding.02733f15.jpg": "/react-portfolio/static/media/wedding.02733f15.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f00a47a1.js",
-    "static/js/2.1bcdb2a8.chunk.js",
-    "static/css/main.0c5180e6.chunk.css",
-    "static/js/main.de97c5ac.chunk.js"
+    "static/js/runtime-main.5f767cf3.js",
+    "static/js/2.639df2b9.chunk.js",
+    "static/css/main.9f23d9c2.chunk.css",
+    "static/js/main.1d53ab56.chunk.js"
   ]
 }
